@@ -1,4 +1,4 @@
-package com.vendo.exception;
+package com.vendo.redis_lib.exception;
 
 public class OtpExpiredException extends RuntimeException {
     public OtpExpiredException(String message) {

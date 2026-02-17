@@ -1,4 +1,4 @@
-package com.vendo.config;
+package com.vendo.redis_lib.config;
 
 import lombok.Data;
 
