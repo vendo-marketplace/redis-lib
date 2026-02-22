@@ -8,7 +8,7 @@ public class PrefixProperties {
 
     private long ttl;
 
-    public PrefixProperties(String prefix) {
+    public PrefixProperties() {
     }
 
     public PrefixProperties(String prefix, long ttl) {
