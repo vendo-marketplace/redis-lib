@@ -1,4 +1,4 @@
-package com.vendo.redis_lib.config;
+package com.vendo.redis_lib.prefix;
 
 public record PrefixProperties(String prefix, long ttl) {
 
