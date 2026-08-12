@@ -29,15 +29,15 @@ Example:
 
 ```java
 import com.vendo.redis_lib.prefix.PrefixProperties;
-import com.vendo.redis_lib.exception.OtpExpiredException;
+import com.vendo.redis_lib.exception.CodeExpiredException;
 
 // Example usage
 
-PrefixProperties prop = new PrefixProperties().buildPrefix("otp");
-String otpValue = redisTemplate.opsForValue().get(prop); 
+PrefixProperties prop = new PrefixProperties().buildPrefix("code");
+String codeValue = redisTemplate.opsForValue().get(prop); 
 
-if (otpValue == null) {     
-    throw new OtpExpiredException("OTP value expired or not found for user " + userId);
+if (codeValue == null) {     
+    throw new CodeExpiredException("Code value expired or not found for user " + userId);
 }
 ```
 
